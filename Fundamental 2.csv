@@ -1,0 +1,70 @@
+HTML,CSS,JavaScript
+"<div class=""chapter-card"">
+  <h1>Fundamentals of Computer</h1>
+  <p>Computer ek aisi electronic machine hai jo user se input leti hai, use process karti hai aur result (output) deti hai.</p>
+  <h2>Main Parts of Computer</h2>
+  <ul>
+    <li><strong>CPU:</strong> Ise computer ka dimaag (Central Processing Unit) kaha jata hai.</li>
+    <li><strong>Memory:</strong> Data aur instructions ko store karne ki jagah (jaise RAM aur ROM).</li>
+    <li><strong>Input Devices:</strong> Data enter karne ke liye, jaise Mouse aur Keyboard.</li>
+    <li><strong>Output Devices:</strong> Result dekhne ke liye, jaise Monitor aur Printer.</li>
+  </ul>
+  <button id=""showMoreBtn"">Aur Jaane</button>
+  <div id=""moreDetails"" style=""display:none;"">
+    <p>Charles Babbage ko Computer ka pita (Father of Computer) kaha jata hai. Hardware aur software dono milkar ek computer system ko chalate hain.</p>
+  </div>
+</div>",".chapter-card {
+  font-family: sans-serif;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 100%;
+}
+.chapter-card h1 {
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+}
+.chapter-card h2 {
+  color: #34495e;
+  font-size: 1.2rem;
+  margin-top: 15px;
+}
+.chapter-card ul {
+  padding-left: 20px;
+}
+.chapter-card li {
+  margin-bottom: 8px;
+  color: #555;
+  line-height: 1.5;
+}
+#showMoreBtn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+#showMoreBtn:hover {
+  background-color: #2980b9;
+}
+#moreDetails p {
+  background-color: #e8f8f5;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 5px;
+  color: #16a085;
+}","document.getElementById(""showMoreBtn"").addEventListener(""click"", function() {
+  let details = document.getElementById(""moreDetails"");
+  if (details.style.display === ""none"") {
+    details.style.display = ""block"";
+    this.innerText = ""Kam Dekhe"";
+  } else {
+    details.style.display = ""none"";
+    this.innerText = ""Aur Jaane"";
+  }
+});"
